@@ -1,0 +1,44 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// ::selection{
+//    background: $color-primary-blue;
+//
+// }
+
+html{
+  // 1 rem
+  // scroll-behavior: smooth;
+  font-size: 60.5%;
+  font-family: sans-serif;
+  letter-spacing: .5px;
+  font-family: 'Montserrat', sans-serif;
+  // color:$color-gig-font;
+
+  // overflow-y: scroll;
+
+  @include respond(tab-land){
+    font-size: 56.25%;
+  }
+  @include respond(tab-port){
+    font-size: 50%;
+  }
+  @include respond(phone){
+    font-size: 45%;
+  }
+  @include respond(big-desktop){
+    font-size: 75%;
+  }
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  @include respond(tab-land){
+    padding: 0 1rem;
+    background-image: none;
+  }
+}
