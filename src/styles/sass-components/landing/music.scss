@@ -1,0 +1,17 @@
+&__music{
+    // display: none;
+  &_toggler{
+    z-index: 10000;
+    position:fixed;
+    right:5rem;
+    top:5rem;
+    font-size: 5rem;
+    padding: 2rem;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    color:$color-exim-blue;
+    border: 1px solid $color-exim-blue;
+    cursor: pointer;
+  }
+}

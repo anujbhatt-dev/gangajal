@@ -1,0 +1,15 @@
+&__s1{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top,rgba(255,165,0,.3),$color-white);
+  &_img{
+    z-index: 10000;
+    transform: translateX(-50%);
+    position: fixed;
+    top: 39%;
+    left: 50.5%;
+    transition: all 1s;
+  }
+}
