@@ -1,0 +1,29 @@
+.loader{
+  background:linear-gradient(to bottom,rgba(255,165,0,.3),rgba(135,206,235,.9));
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  position:fixed;top: 0;left:0;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color: $color-white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  backface-visibility: hidden;
+  font-family: 'Roboto', cursive;
+  // font-weight: bold;
+  flex-flow: column;
+  overflow: hidden;
+  // opacity: .1;
+  & > *{
+    margin: 2rem 0;
+  }
+}
+.loaded{
+  // display: none;
+  animation: foaded 1s linear;
+  animation-fill-mode: forwards;
+}

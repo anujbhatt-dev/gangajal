@@ -3,15 +3,16 @@
   background: rgba(88,161,247,0.8410714627647934);
   height: 100vh;
   overflow: hidden;
-  margin-bottom: 100vh;
+  // margin-bottom: 100vh;
+  display: none;
   &:before{
     content: '';
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(to top,#0d2a59,transparent) ;
+    // background: linear-gradient(to top,rgba($color-white,1),transparent) ;
     z-index: 10000;
-    height: 50rem;
+    height: 20rem;
   }
   &:after{
     content: '';
