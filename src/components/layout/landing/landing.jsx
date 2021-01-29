@@ -1,7 +1,6 @@
 import React, {Component} from "react"
 import $ from "jquery"
 import ripples from 'jquery.ripples'
-// import shiva from "../../../assets/images/shiva.png"
 import mount from "../../../assets/images/mount.png"
 import water from "../../../assets/images/water.png"
 import sun from "../../../assets/images/sun.png"
@@ -13,21 +12,26 @@ import music from "../../../assets/audios/music.mp3"
   class Landing extends Component{
 
     state={
-      music:false
+      music:new Audio(music),
+      paused:true,
     }
 
     musicHandler=()=>{
-      let player = document.querySelector(".landing__music")
-
-      let x = new Audio(music)
-      if(!player.paused && !player.ended && 0 < player.currentTime){
-        x.pause();
-      }else{
-        x.play();
+      if(this.state.paused){
+       
+        this.state.music.play()
+        .then(
+      this.setState({paused:false}))}
+      else{
+        this.state.music.pause();
+        this.setState({paused:true});
       }
     }
 
     componentDidMount=()=>{
+
+      this.state.music.loop=true;
+
       let sky = document.getElementById("sky");
       let sun = document.getElementById("sun");
       let mount = document.getElementById("mount");
@@ -58,11 +62,10 @@ import music from "../../../assets/audios/music.mp3"
       return (
           <div className="landing">
              <div onClick={this.musicHandler} className="landing__music_toggler"></div>
-             <audio autoPlay={false} className="landing__music" >
-               <source src={music} type="audio/mp3"/>
-             </audio>
              <div className="landing__s1">
                   <img id="logo" className="landing__s1_img" src={logo} alt=""/>
+                  {this.state.paused?"play":"pause"}
+
              </div>
              <div  className="landing__welcome">
                   <img id="sky" className="landing__welcome_img landing__welcome_mount" src={sky} alt=""/>
