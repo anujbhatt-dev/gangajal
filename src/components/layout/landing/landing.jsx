@@ -6,6 +6,7 @@ import water from "../../../assets/images/water.png"
 import sun from "../../../assets/images/sun.png"
 import sky from "../../../assets/images/sky.png"
 
+
   class Landing extends Component{
 
     componentDidMount=()=>{
