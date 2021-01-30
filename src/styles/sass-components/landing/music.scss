@@ -5,7 +5,7 @@
     position:fixed;
     right:5rem;
     top:5rem;
-    font-size: 5rem;
+    font-size: 1rem;
     padding: 2rem;
     border-radius: 50%;
     height: 3rem;
@@ -13,5 +13,9 @@
     color:$color-exim-blue;
     border: 1px solid $color-exim-blue;
     cursor: pointer;
+    // transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

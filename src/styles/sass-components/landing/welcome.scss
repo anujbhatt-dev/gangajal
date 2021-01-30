@@ -36,13 +36,17 @@
   &_mount{
 
   }
+  &_sun{
+    // transform: scale(.999);
+    position: absolute;
+    // top: 250px;
+    // left: 0%;
+    z-index: 10000;
+  }
   &_water{
     // box-shadow: inset 0 -8rem 5rem -5rem $color-exim-green;
-
-  }
-  &_sun{
-    // top: -25rem;
-    left: 0%;
+      position: absolute;
+      z-index: 10001;
   }
   &_shiva{
     width: 50vh;

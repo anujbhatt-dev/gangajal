@@ -11,8 +11,8 @@ import ripples from 'jquery.ripples'
 
     componentDidMount=()=>{
       $('.loader').ripples({
-        resolution: 200,
-        perturbance: 0.04,
+        resolution: 100,
+        perturbance: 0.02,
       });
 
       setTimeout(()=>{
