@@ -3,6 +3,7 @@ import Landing from "./landing/landing"
 import Loader from "./loader/loader"
 import Footer from "./footer/footer"
 import Social from "./fixed/social"
+import NavigationDots from "./navigation-dots/navigation-dots"
 import $ from 'jquery'
 import ripples from 'jquery.ripples';
 
@@ -28,6 +29,8 @@ class Layout extends Component{
             <Loader loaded={this.state.loaded}/>
             <Landing/>
             <Social/>
+            <NavigationDots/>
+            <Footer/>
         </div>
       )
     }
