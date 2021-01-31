@@ -90,7 +90,7 @@ class Landing extends Component {
         </Animator>
       </ScrollPage>
       <ScrollPage page={2}>
-        <Animator animation={batch(Fade(), Sticky())}>
+        <Animator animation={batch(Fade(), MoveOut(0, -200),)}>
         <div  className={"page page0"}>
           <h1 id="2" data-aos="fade" className="page__head">why 2</h1>
           <p data-aos="fade" className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
@@ -99,10 +99,10 @@ class Landing extends Component {
         </Animator>
       </ScrollPage>
     
-      <ScrollPage page={4}>
+      <ScrollPage page={3}>
         <Animator animation={batch(Fade(), Sticky())}>
         <div  className={"page page0"}>
-          <h1 id="4" data-aos="fade" className="page__head">why 4</h1>
+          <h1 id="3" data-aos="fade" className="page__head">why 3</h1>
           <p data-aos="fade" className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
           <div className="page0__cursor"></div>
         </div>
