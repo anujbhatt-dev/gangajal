@@ -111,7 +111,7 @@ class Landing extends Component {
         <img id="logo" className="landing__s1_img" src={logo} alt="" />
         <div  className={"page page0"}>
           <h1 id="1" data-aos="fade" className="page__head">why us</h1>
-          <p data-aos="fade" className="page__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
+          <p data-aos="fade" className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
           <div className="page0__cursor"></div>
         </div>
         <div  className={"page page1"}>
