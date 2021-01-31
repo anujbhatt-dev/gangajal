@@ -6,7 +6,7 @@ import React, {Component} from "react"
     render(){
 
       return (
-        <div id="footer" className="footer">
+        <div id="3" className="footer">
             <div class="waveWrapper waveAnimation">
 
               <div class="waveWrapperInner bgMiddle">

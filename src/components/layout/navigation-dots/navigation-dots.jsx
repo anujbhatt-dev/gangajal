@@ -11,9 +11,9 @@ class NavigationDots extends Component{
 
     return (
        <nav className="nav">
-           <Link onClick={this.props.clicked} hashSpy={true} spy={true} activeClass="nav__active" to="screen1" smooth="true" duration={500} className="nav__dots"></Link>
-           <Link onClick={this.props.clicked} hashSpy={true} spy={true} activeClass="nav__active" to="screen2" smooth="true" duration={500} className="nav__dots"></Link>
-           <Link onClick={this.props.clicked} hashSpy={true} spy={true} activeClass="nav__active" to="footer" smooth="true" duration={500} className="nav__dots"></Link>
+           <Link onClick={this.props.clicked} hashSpy={true} spy={true} activeClass="nav__active" to="1" smooth="true" duration={500} className="nav__dots"></Link>
+           <Link onClick={this.props.clicked} hashSpy={true} spy={true} activeClass="nav__active" to="2" smooth="true" duration={500} className="nav__dots"></Link>
+           <Link onClick={this.props.clicked} hashSpy={true} spy={true} activeClass="nav__active" to="3" smooth="true" duration={500} className="nav__dots"></Link>
        </nav>
     )
   }
