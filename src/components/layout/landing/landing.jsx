@@ -15,7 +15,7 @@ class Landing extends Component {
     maxHash: 3,
     scrollAllowed:true,
     currentHash:1,
-    
+
   }
 
    scrollCount=0;
@@ -52,7 +52,7 @@ class Landing extends Component {
 
     //logo transition
     setTimeout(() => {
-      document.getElementById("logo").style.position = "fixed"
+      document.getElementById("logo").style.position = "absolute"
       document.getElementById("logo").style.top = "4rem"
       document.getElementById("logo").style.left = "50%"
     }, 5000)
@@ -73,7 +73,7 @@ class Landing extends Component {
     // },10000)
 
     this.setState({scrollAllowed:false});
-     this.scrollHandler(val);     
+     this.scrollHandler(val);
      setTimeout(()=>{
       this.setState({scrollAllowed:true});
      },1000)
@@ -81,7 +81,7 @@ class Landing extends Component {
 
   setScrollEvent=()=>{
     var scrollPos = 0;
-    window.addEventListener('scroll', ()=>{     
+    window.addEventListener('scroll', ()=>{
       if ((document.body.getBoundingClientRect()).top > scrollPos)
        this.onScrollFunction(-1)      ;
       else
