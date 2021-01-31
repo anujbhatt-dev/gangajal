@@ -6,6 +6,8 @@ import music from "../../../assets/audios/music.mp3"
 import Aos from "aos"
 import "aos/dist/aos.css"
 import { withRouter } from "react-router-dom"
+import { Animator, ScrollContainer, ScrollPage, batch,FadeUp,ZoomInScrollOut,FlexCenterStyle, Fade, FadeIn, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
+
 
 class Landing extends Component {
 
@@ -57,50 +59,8 @@ class Landing extends Component {
       document.getElementById("logo").style.left = "50%"
     }, 5000)
 
-
-    this.setScrollEvent();
   }
 
-
-  onScrollFunction=(val)=>{
-
-    if(!this.state.scrollAllowed)
-      return;
-
-    // window.removeEventListener("scroll", ()=>console.log("removed scroll event"));
-    // setTimeout(()=>{
-    //   window.addEventListener('scroll',this.setScrollEvent)
-    // },10000)
-
-    this.setState({scrollAllowed:false});
-     this.scrollHandler(val);
-     setTimeout(()=>{
-      this.setState({scrollAllowed:true});
-     },1000)
-  }
-
-  setScrollEvent=()=>{
-    var scrollPos = 0;
-    window.addEventListener('scroll', ()=>{
-      if ((document.body.getBoundingClientRect()).top > scrollPos)
-       this.onScrollFunction(-1)      ;
-      else
-      this.onScrollFunction(1);    // saves the new position for iteration.
-      scrollPos = (document.body.getBoundingClientRect()).top;
-    });
-  }
-
-  scrollHandler = (val) => {
-
-    let newCurrentHash = this.state.currentHash + val;
-
-    if (newCurrentHash > 0 && newCurrentHash<=this.state.maxHash) {
-        window.location.hash = "#" + newCurrentHash;
-        this.setState({ currentHash: newCurrentHash });
-    }
-
-
-  }
 
 
   render() {
@@ -108,21 +68,48 @@ class Landing extends Component {
     return (
       <div className="landing">
         <div onClick={this.musicHandler} className="landing__music_toggler"><i class="fa fa-circle" aria-hidden="true"></i></div>
-        <img id="logo" className="landing__s1_img" src={logo} alt="" />
+      <img id="logo" className="landing__s1_img" src={logo} alt="" />
+   
+      <ScrollContainer>
+      <ScrollPage page={0}>
+        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
         <div  className={"page page0"}>
-          <h1 id="1" data-aos="fade" className="page__head">why us</h1>
+          <h1 id="0" data-aos="fade" className="page__head">why 0</h1>
           <p data-aos="fade" className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
           <div className="page0__cursor"></div>
         </div>
-        <div  className={"page page1"}>
-          <p id="2" data-aos="fade" className="page__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
-          <div className="page1__cursor"></div>
+        </Animator>
+      </ScrollPage>
+      <ScrollPage page={1}>
+        <Animator animation={ZoomInScrollOut}>
+        <div  className={"page page0"}>
+          <h1 id="1" data-aos="fade" className="page__head">why 1</h1>
+          <p data-aos="fade" className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
+          <div className="page0__cursor"></div>
         </div>
-        <div onClick={() => this.scrollHandler(-1)} className="landing__music_toggler page__pageUp"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
-        <div onClick={() => this.scrollHandler(1)} className="landing__music_toggler page__pageDown"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
-
-
-      </div>
+        </Animator>
+      </ScrollPage>
+      <ScrollPage page={2}>
+        <Animator animation={batch(Fade(), Sticky())}>
+        <div  className={"page page0"}>
+          <h1 id="2" data-aos="fade" className="page__head">why 2</h1>
+          <p data-aos="fade" className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
+          <div className="page0__cursor"></div>
+        </div>
+        </Animator>
+      </ScrollPage>
+    
+      <ScrollPage page={4}>
+        <Animator animation={batch(Fade(), Sticky())}>
+        <div  className={"page page0"}>
+          <h1 id="4" data-aos="fade" className="page__head">why 4</h1>
+          <p data-aos="fade" className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
+          <div className="page0__cursor"></div>
+        </div>
+        </Animator>
+      </ScrollPage>
+    </ScrollContainer>
+    </div>
     )
   }
 }
