@@ -7,6 +7,7 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 import { withRouter } from "react-router-dom"
 import { Animator, ScrollContainer, ScrollPage, batch,FadeUp,ZoomInScrollOut,FlexCenterStyle, Fade, FadeIn, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
+import Tilt from 'react-parallax-tilt';
 
 
 class Landing extends Component {
@@ -69,14 +70,21 @@ class Landing extends Component {
       <div className="landing">
         <div onClick={this.musicHandler} className="landing__music_toggler"><i class="fa fa-circle" aria-hidden="true"></i></div>
       <img id="logo" className="landing__s1_img" src={logo} alt="" />
-   
+      
+
       <ScrollContainer>
       <ScrollPage page={0}>
         <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
+          
         <div  className={"page page0"}>
           <h1 id="0" data-aos="fade" className="page__head">why 0</h1>
           <p data-aos="fade" className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
           <div className="page0__cursor"></div>
+          <Tilt>
+      <div style={{ height: '300px', backgroundColor:'green'}}>
+        <h1>Bottle</h1>
+      </div>
+    </Tilt>
         </div>
         </Animator>
       </ScrollPage>
