@@ -8,7 +8,6 @@ import React, {Component} from "react"
       return (
         <div id="3" className="waveOut">
             <div class="waveWrapper waveAnimation">
-                 hello
               <div class="waveWrapperInner bgMiddle">
                   <div class="wave waveMiddle" style={{backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg')"}}></div>
               </div>
