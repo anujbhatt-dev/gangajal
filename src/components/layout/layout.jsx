@@ -27,8 +27,8 @@ class Layout extends Component{
 
   render(){
     return (
+      // <Footer/>
         <div className="landing">
-            <Footer/>
             <Loader loaded={this.state.loaded}/>
             <Switch>
                <Route exact path="/">

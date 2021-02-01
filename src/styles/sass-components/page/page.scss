@@ -1,14 +1,14 @@
 .page{
   height: 100vh;
   width: 100vw;
-  // overflow: hidden;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  z-index: 1000;
+  // z-index: 1000;
   &__head{
     font-size: 5rem;
     margin-bottom: 5rem;
@@ -16,8 +16,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: $color-black;
+
     &_span{
-      animation: vib 10s linear infinite;
+      animation: vib 5s linear infinite;
       animation-fill-mode: both;
       margin-left: 2rem;
       display: flex;
@@ -25,7 +27,7 @@
       align-items: center;
       font-size: 1.5rem;
       text-decoration: none;
-      color: $color-white;
+      color: $color-black;
       // padding: 5rem;
       height: 8rem;
       width:8rem;
@@ -46,6 +48,7 @@
     font-size: 2.5rem;
     width: 50rem;
     line-height: 2;
+    color: $color-black;
   }
   &__pageUp{
      top:75%
@@ -65,25 +68,16 @@
 
 @keyframes vib {
    0%{
-     top : 2rem;
-     left: 2rem;
-   }
-   25%{
-
-     top : 2rem;
-     left: 1rem;
-   }
-   50%{
      top : 0rem;
-     left: 0rem;
    }
-   75%{
+   33%{
      top : -2rem;
-     left: -1rem;
+   }
+   66%{
+     top : 2rem;
    }
    100%{
-     top : -2rem;
-     left:-2rem;
+     top : 0rem;
    }
 }
 @keyframes page1 {

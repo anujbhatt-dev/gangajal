@@ -3,6 +3,7 @@ import $ from "jquery"
 import ripples from 'jquery.ripples'
 import logo from "../../../assets/images/logo.svg"
 import music from "../../../assets/audios/music.mp3"
+import bottle from "../../../assets/images/bottle.png"
 import Aos from "aos"
 import "aos/dist/aos.css"
 import { withRouter } from "react-router-dom"
@@ -55,11 +56,11 @@ class Landing extends Component {
     this.state.music.loop = true;
 
     //logo transition
-    setTimeout(() => {
-      document.getElementById("logo").style.position = "absolute"
-      document.getElementById("logo").style.top = "4rem"
-      document.getElementById("logo").style.left = "15rem"
-    }, 4000)
+    // setTimeout(() => {
+    //   document.getElementById("logo").style.position = "absolute"
+    //   document.getElementById("logo").style.top = "4rem"
+    //   document.getElementById("logo").style.left = "15rem"
+    // }, 4000)
 
   }
 
@@ -67,6 +68,7 @@ class Landing extends Component {
       document.querySelector(".page__head_span").style.transform = "scale(28)";
       document.querySelector(".page__head_span").style.background = "white";
       document.querySelector(".page__head_span").style.zIndex= "10000";
+      document.querySelector(".page__head_span").style.overflow= "visibile";
       setTimeout(()=>{
         this.props.history.push("/contactUs");
       },500)
@@ -85,42 +87,42 @@ class Landing extends Component {
         <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
 
         <div  className={"page page0"}>
-          <h1 id="0" data-aos="fade" className="page__head">why 0</h1>
-          <p data-aos="fade" className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
-          <div className="page0__cursor"></div>
-          <Tilt>
-      <div style={{ height: '300px', backgroundColor:'green'}}>
-        <h1>Bottle</h1>
-      </div>
-    </Tilt>
+          <h1 id="0" className="page__head">why 0</h1>
+          <p className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
+
+          <div className="page0__bottle">
+            <Tilt>
+                <img src={bottle} alt=""/>
+            </Tilt>
+          </div>
         </div>
         </Animator>
       </ScrollPage>
       <ScrollPage page={1}>
         <Animator animation={ZoomInScrollOut}>
-        <div  className={"page page0"}>
-          <h1 id="1" data-aos="fade" className="page__head">contact us <span onClick={this.nowHandler} className="page__head_span">now</span> </h1>
-          <p data-aos="fade" className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
-          <div className="page0__cursor"></div>
+        <div  className={"page page1"}>
+          <h1 id="1" className="page__head">contact us <span onClick={this.nowHandler} className="page__head_span">now</span> </h1>
+          <p className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
+
         </div>
         </Animator>
       </ScrollPage>
       <ScrollPage page={2}>
         <Animator animation={batch(Fade(), MoveOut(0, -200),)}>
         <div  className={"page page0"}>
-          <h1 id="2" data-aos="fade" className="page__head">why 2</h1>
-          <p data-aos="fade" className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
-          <div className="page0__cursor"></div>
+          <h1 id="2" className="page__head">why 2</h1>
+          <p className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
+
         </div>
         </Animator>
       </ScrollPage>
 
       <ScrollPage page={3}>
         <Animator animation={batch(Fade(), Sticky())}>
-        <div  className={"page page0"}>
-          <h1 id="3" data-aos="fade" className="page__head">why 3</h1>
-          <p data-aos="fade" className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
-          <div className="page0__cursor"></div>
+        <div  className={"page page1"}>
+          <h1 id="3" className="page__head">why 3</h1>
+          <p className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
+
         </div>
         </Animator>
       </ScrollPage>
