@@ -3,7 +3,7 @@ import {Route,Switch,withRouter} from "react-router-dom"
 import Landing from "./landing/landing"
 import Contact from "./contact/contact"
 import Loader from "./loader/loader"
-import Footer from "./footer/footer"
+import Wave from "./wave/wave"
 import Social from "./fixed/social"
 import NavigationDots from "./navigation-dots/navigation-dots"
 import $ from 'jquery'
@@ -34,6 +34,7 @@ class Layout extends Component{
                <Route exact path="/">
                    <Landing/>
                    <Social/>
+                   <Wave/>
                </Route>
                <Route exact path="/contactUs">
                    <Contact/>
