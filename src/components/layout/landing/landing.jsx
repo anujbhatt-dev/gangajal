@@ -58,13 +58,18 @@ class Landing extends Component {
     setTimeout(() => {
       document.getElementById("logo").style.position = "absolute"
       document.getElementById("logo").style.top = "4rem"
-      document.getElementById("logo").style.left = "50%"
-    }, 5000)
+      document.getElementById("logo").style.left = "15rem"
+    }, 4000)
 
   }
 
    nowHandler=()=>{
-      document.querySelector(".page__head_span").style.transform = "scale(50)";
+      document.querySelector(".page__head_span").style.transform = "scale(25)";
+      document.querySelector(".page__head_span").style.background = "white";
+      document.querySelector(".page__head_span").style.zIndex= "10000";
+      setTimeout(()=>{
+        this.props.history.push("/contactUs");
+      },1000)
    }
 
   render() {

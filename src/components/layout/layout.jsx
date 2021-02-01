@@ -1,5 +1,7 @@
 import React, {Component} from "react"
+import {Route,Switch,withRouter} from "react-router-dom"
 import Landing from "./landing/landing"
+import Contact from "./contact/contact"
 import Loader from "./loader/loader"
 import Footer from "./footer/footer"
 import Social from "./fixed/social"
@@ -26,15 +28,21 @@ class Layout extends Component{
   render(){
     return (
         <div className="landing">
-            <Loader loaded={this.state.loaded}/>
-            <Landing/>
-            <Social/>
-            <NavigationDots/>
             <Footer/>
+            <Loader loaded={this.state.loaded}/>
+            <Switch>
+               <Route exact path="/">
+                   <Landing/>
+                   <Social/>
+               </Route>
+               <Route exact path="/contactUs">
+                   <Contact/>
+               </Route>
+            </Switch>
         </div>
       )
     }
   }
 
 
- export default Layout;
+ export default withRouter(Layout);

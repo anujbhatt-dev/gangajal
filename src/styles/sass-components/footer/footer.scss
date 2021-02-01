@@ -1,5 +1,5 @@
 .footer{
-  height: 100vh;
+  // height: 100vh;
   position: relative;
   // background: $color-black;
 }
@@ -10,7 +10,7 @@
         transform: translateX(0) translateZ(0) scaleY(1)
     }
     50% {
-        transform: translateX(-25%) translateZ(0) scaleY(2)
+        transform: translateX(-25%) translateZ(0) scaleY(0.85)
     }
     100% {
         transform: translateX(-50%) translateZ(0) scaleY(1)
@@ -18,12 +18,13 @@
 }
 .waveWrapper {
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
     top: 0;
     margin: auto;
+    z-index: 1000;
 }
 .waveWrapperInner {
     position: absolute;
