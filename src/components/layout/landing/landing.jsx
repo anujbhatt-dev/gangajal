@@ -64,12 +64,12 @@ class Landing extends Component {
   }
 
    nowHandler=()=>{
-      document.querySelector(".page__head_span").style.transform = "scale(25)";
+      document.querySelector(".page__head_span").style.transform = "scale(28)";
       document.querySelector(".page__head_span").style.background = "white";
       document.querySelector(".page__head_span").style.zIndex= "10000";
       setTimeout(()=>{
         this.props.history.push("/contactUs");
-      },1000)
+      },500)
    }
 
   render() {
