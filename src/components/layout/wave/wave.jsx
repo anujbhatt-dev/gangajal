@@ -1,14 +1,13 @@
 import React, {Component} from "react"
 
 
-  class Footer extends Component{
+  class Wave extends Component{
 
     render(){
 
       return (
-        <div id="3" className="footer">
+        <div id="3" className="waveOut">
             <div class="waveWrapper waveAnimation">
-
               <div class="waveWrapperInner bgMiddle">
                   <div class="wave waveMiddle" style={{backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg')"}}></div>
               </div>
@@ -22,4 +21,4 @@ import React, {Component} from "react"
   }
 
 
- export default Footer;
+ export default Wave;

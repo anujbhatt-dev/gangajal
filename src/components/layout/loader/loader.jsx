@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import logo from "../../../assets/images/logo.svg"
+import namaste from "../../../assets/images/namaste.png"
 import $ from "jquery"
 import ripples from 'jquery.ripples'
 
@@ -43,7 +43,7 @@ import ripples from 'jquery.ripples'
 
       return (
           <div className={this.props.loaded?"loader loaded":"loader"}>
-               <img src={logo} alt=""/>
+               <img src={namaste} alt=""/>
                <div>
                 {this.state.namaste}
                </div>

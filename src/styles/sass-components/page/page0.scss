@@ -1,9 +1,18 @@
 &0{
   background: rgb(34,193,195);
-  background: url("../../../assets/images/gradient.jpg");
+  background: url("../../../assets/images/water2.jpg");
   background-position: center;
   background-size: cover;
   color: $color-white;
   animation: page0 1s linear;
-
+  position:relative;
+  &__bottle{
+    position: absolute;
+    bottom: 30%;
+    left:-1%;
+    transform:
+    // translateX(-50%)
+    scale(1.2)
+    rotate(90deg);
+  }
 }
