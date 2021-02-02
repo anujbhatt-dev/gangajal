@@ -7,9 +7,9 @@ import React, {Component} from "react"
 
       return (
           <div className="social">
-              <a href="" target="_blank" className="social__item">{" "}<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-              <a href="" target="_blank" className="social__item">{" "}<i class="fa fa-flask" aria-hidden="true"></i></a>
-              <a href="" target="_blank" className="social__item">{" "}<i class="fa fa-circle" aria-hidden="true"></i></a>
+              <a href="" target="_blank" className="social__item">{" "}<i className="fa fa-arrow-right" aria-hidden="true"></i></a>
+              <a href="" target="_blank" className="social__item">{" "}<i className="fa fa-flask" aria-hidden="true"></i></a>
+              <a href="" target="_blank" className="social__item">{" "}<i className="fa fa-circle" aria-hidden="true"></i></a>
           </div>
       )
     }

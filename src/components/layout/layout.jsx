@@ -2,10 +2,12 @@ import React, {Component} from "react"
 import {Route,Switch,withRouter} from "react-router-dom"
 import Landing from "./landing/landing"
 import Contact from "./contact/contact"
+import About from "./about/about"
 import Loader from "./loader/loader"
 import Wave from "./wave/wave"
 import Social from "./fixed/social"
-import NavigationDots from "./navigation-dots/navigation-dots"
+import Nav from "./fixed/navigation"
+import logo from "../../assets/images/logo.svg";
 import $ from 'jquery'
 import ripples from 'jquery.ripples';
 
@@ -30,6 +32,8 @@ class Layout extends Component{
       // <Footer/>
         <div className="landing">
             <Loader loaded={this.state.loaded}/>
+            <img id="logo" className="landing__s1_img" src={logo} alt="" />
+            <Nav/>
             <Switch>
                <Route exact path="/">
                    <Landing/>
@@ -38,6 +42,9 @@ class Layout extends Component{
                </Route>
                <Route exact path="/contactUs">
                    <Contact/>
+               </Route>
+               <Route exact path="/about">
+                   <About/>
                </Route>
             </Switch>
         </div>

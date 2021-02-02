@@ -79,7 +79,7 @@ class Landing extends Component {
     return (
       <div className="landing">
         <div onClick={this.musicHandler} className="landing__music_toggler"><i class="fa fa-circle" aria-hidden="true"></i></div>
-      <img id="logo" className="landing__s1_img" src={logo} alt="" />
+
 
 
       <ScrollContainer>
