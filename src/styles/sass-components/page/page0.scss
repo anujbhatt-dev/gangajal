@@ -9,12 +9,28 @@
   position:relative;
   &__bottle{
     position: absolute;
-    bottom: 0%;
-    left:50%;
+    bottom: 20%;
+    left:80%;
+    & img{
+      width: 35rem;
+    }
     transform:
     translateX(-50%)
     // scale(1.2)
-    // rotate(90deg)
+    rotate(25deg)
+    ;
+  }
+  &__bottle2{
+    position: absolute;
+    bottom: 30%;
+    left:20%;
+    & img{
+      width: 35rem;
+    }
+    transform:
+    translateX(-50%)
+    // scale(1.2)
+    rotate(-20deg)
     ;
   }
 }

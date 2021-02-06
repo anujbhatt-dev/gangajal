@@ -1,13 +1,14 @@
 .social{
   position: fixed;
   z-index: 1000000;
-  top: 85%;
-  left: 15rem;
+  top: 40%;
+  right: 6.5rem;
   // transform: translateY(-50%);
   display: flex;
+  flex-flow: column;
   &__item{
+    margin-bottom: 5rem;
     font-size: 2rem;
-    margin-right: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
