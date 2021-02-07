@@ -125,12 +125,8 @@ class Landing extends Component {
 
       <ScrollPage page={3}>
         <Animator animation={batch(Fade())}>
-        <h1 id="3" className="heading-primary">benifits of gangajal</h1>
-        <div  className={"page "}>
-
-          <Benefits/>
-
-        </div>
+            <h1 id="3" className="heading-primary">benifits of gangajal</h1>
+            <Benefits/>
         </Animator>
       </ScrollPage>
 

@@ -2,6 +2,13 @@ import React, { Component } from 'react'
 import lines from "../../../../assets/images/lines.png"
 import cssClass from "./benefits.css"
 
+import anahata from "../../../../assets/images/anahata.svg"
+import minerals from "../../../../assets/images/minerals.svg"
+import purify from "../../../../assets/images/purify.svg"
+import facialTreatment from "../../../../assets/images/facial-treatment.svg"
+import hands from "../../../../assets/images/hands.svg"
+
+
 export default class Benefits extends Component {
 
 
@@ -34,6 +41,12 @@ export default class Benefits extends Component {
                 title:"3",
                 description:"3",
             },
+            {
+                id:4,
+                icon:"",
+                title:"4",
+                description:"4",
+            },
 
         ],
 
@@ -55,7 +68,7 @@ export default class Benefits extends Component {
 
     render() {
         return (
-            <div>
+            <div className="benefits__wrapper">
             <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" version="1.1" width="350" height="350">
   <defs>
     <clipPath id="clip">
@@ -106,19 +119,19 @@ export default class Benefits extends Component {
     </g>
   </g>
 </svg>
-<img className="benefits__img" src={lines} alt=""/>
-<h2 onClick={()=>this.changeHandler(0)}>0</h2>
-<h2 onClick={()=>this.changeHandler(1)}>1</h2>
-<h2 onClick={()=>this.changeHandler(2)}>2</h2>
-<h2 onClick={()=>this.changeHandler(3)}>3</h2>
-<br/>
+      <img className="benefits__img" src={lines} alt=""/>
+      <div className="benefits__svg benefits__svg1" onClick={()=>this.changeHandler(0)}><img  src={anahata} alt=""/></div>
+      <div className="benefits__svg benefits__svg2" onClick={()=>this.changeHandler(1)}><img  src={minerals} alt=""/></div>
+      <div className="benefits__svg benefits__svg3" onClick={()=>this.changeHandler(2)}><img  src={purify} alt=""/></div>
+      <div className="benefits__svg benefits__svg4" onClick={()=>this.changeHandler(3)}><img  src={facialTreatment} alt=""/></div>
+      <div className="benefits__svg benefits__svg5" onClick={()=>this.changeHandler(4)}><img  src={hands} alt=""/></div>
 
-<p classtitle="page__text">
-    <h3>{this.state.benefits[this.state.selectedId].title}</h3>
-    {this.state.benefits[this.state.selectedId].description}
-</p>
+      <div className="benefits__text">
+         <div className="benefits__text_head">{this.state.benefits[this.state.selectedId].title} Lorem ipsum dolor.</div>
+         <div className="benefits__text_content">{this.state.benefits[this.state.selectedId].description} Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit odio eligendi cum fugiat animi non, alias molestiae neque iure est, numquam. Corporis culpa velit ipsam eveniet voluptatem sit, deleniti alias quia architecto, nisi quisquam vero distinctio voluptates, fugit exercitationem ipsa expedita voluptatum? Voluptates libero odit, in minus similique esse unde ullam, ipsa. Consequatur ab, ipsum obcaecati, eius modi reiciendis cupiditate suscipit sit autem iste nesciunt quidem, numquam doloribus, rem corrupti voluptate adipisci qui accusantium laborum? Eligendi delectus quae incidunt maxime fugit saepe quasi, cupiditate sed, neque inventore illo ducimus ipsum repudiandae sequi. Veniam exercitationem, officia illo perferendis eos saepe dolore.</div>
+      </div>
 
-            </div>
+</div>
         )
     }
 }
