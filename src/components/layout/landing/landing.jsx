@@ -138,7 +138,7 @@ class Landing extends Component {
 
       <ScrollPage page={4}>
         <Animator animation={ZoomInScrollOut}>
-        <div  className={"page page0"}>
+        <div  className={"page page1"}>
           <h1 id="3" className="page__head">Ganga facts</h1>
           <p className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
 

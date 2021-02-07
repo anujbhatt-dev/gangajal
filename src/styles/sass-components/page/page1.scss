@@ -3,15 +3,15 @@ $orange:orangered;
 &1{
   color: $color-white;
   animation: page1 1s linear;
-  background: url("../../../assets/images/water2.jpg");
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(148,187,233,1) 100%);
   background: linear-gradient(180deg, rgba($orange,0.9335084375547094) , rgba(27,217,195,0.9110994739692753) );
+  background: url("../../../assets/images/gradient.jpg");
   // background: $color-white;
-  background-position: center;
+  background-position: top;
   background-size: cover;
-  color: $color-white;
+  color: $color-black;
   &1{
-    background: rgba($orange,0.4);
+    background: #f6d09f;
     box-shadow: inset 0 2rem 5rem rgba($color-white,.5);
   }
 }

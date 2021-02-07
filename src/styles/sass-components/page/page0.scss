@@ -2,12 +2,12 @@ $orange:orangered;
 
 &0{
   background: rgb(34,193,195);
-  background: url("../../../assets/images/water2.jpg");
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(148,187,233,1) 100%);
   background: linear-gradient(180deg, rgba($orange,0.9335084375547094) , rgba(27,217,195,0.9110994739692753));
-  background-position: center;
+  background: url("../../../assets/images/gradient2.jpg");
+  background-position: bottom;
   background-size: cover;
-  color: $color-white;
+  color: $color-black;
   animation: page0 1s linear;
   position:relative;
   &__bottle{
