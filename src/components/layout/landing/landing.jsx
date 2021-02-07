@@ -116,9 +116,9 @@ class Landing extends Component {
 
       <ScrollPage page={2}>
         <Animator animation={ZoomInScrollOut}>
-        <div  className={"page page1"}>
-          <h1 id="1" className="page__head">contact us <span onClick={this.nowHandler} className="page__head_span">now</span> </h1>
+        <div  className={"page page1 page11"}>
           <p className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
+          <h1 id="1" className="page__head">call us <span onClick={this.nowHandler} className="page__head_span">now</span> </h1>
 
         </div>
         </Animator>
@@ -127,7 +127,7 @@ class Landing extends Component {
 
       <ScrollPage page={3}>
         <Animator animation={batch(Fade())}>
-        <div  className={"page page1"}>
+        <div  className={"page "}>
           <h1 id="3" className="page__head">why 3</h1>
           <p className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
 
