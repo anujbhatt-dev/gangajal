@@ -9,7 +9,7 @@ import Whyus from "./whyus/whyus"
 import Aos from "aos"
 import "aos/dist/aos.css"
 import { withRouter } from "react-router-dom"
-import { Animator, ScrollContainer, ScrollPage, batch,FadeUp,ZoomInScrollOut,FlexCenterStyle, Fade, FadeIn, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
+import { Animator, ScrollContainer, ScrollPage, batch,FadeUp,ZoomInScrollOut,ZoomInScrollIn,FlexCenterStyle, Fade, FadeIn, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
 import Tilt from 'react-parallax-tilt';
 import {Link} from "react-router-dom"
 
@@ -125,10 +125,21 @@ class Landing extends Component {
       </ScrollPage>
 
 
+
       <ScrollPage page={3}>
-        <Animator animation={batch(Fade())}>
+        <Animator animation={ZoomInScrollIn}>
         <div  className={"page "}>
-          <h1 id="3" className="page__head">why 3</h1>
+          <h1 id="3" className="page__head">benifits of gangajal</h1>
+          <p className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
+
+        </div>
+        </Animator>
+      </ScrollPage>
+
+      <ScrollPage page={4}>
+        <Animator animation={ZoomInScrollOut}>
+        <div  className={"page page0"}>
+          <h1 id="3" className="page__head">Ganga facts</h1>
           <p className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
 
         </div>
