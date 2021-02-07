@@ -14,7 +14,7 @@
   height: 15rem;
   overflow: hidden;
   position: fixed;
-  bottom: 0;
+  bottom: -4rem;
   width: 100vw;
 }
 .waveWrapper {
@@ -23,7 +23,7 @@
     // left: 0;
     // top: 0;
     margin: auto;
-    height: 100rem;
+    height: 20rem;
 }
 .waveWrapperInner {
     position: absolute;
@@ -48,7 +48,7 @@
     left: 0;
     bottom: 0;
     width: 200%;
-    height: 100rem;
+    height: 20rem;
     background-repeat: repeat no-repeat;
     background-position: 0 bottom;
     transform-origin: center bottom;
