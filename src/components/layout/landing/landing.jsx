@@ -12,6 +12,7 @@ import { withRouter } from "react-router-dom"
 import { Animator, ScrollContainer, ScrollPage, batch,FadeUp,ZoomInScrollOut,ZoomInScrollIn,FlexCenterStyle, Fade, FadeIn, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
 import Tilt from 'react-parallax-tilt';
 import {Link} from "react-router-dom"
+import Benefits from "./benefits/benefits"
 
 
 class Landing extends Component {
@@ -129,8 +130,9 @@ class Landing extends Component {
       <ScrollPage page={3}>
         <Animator animation={batch(Fade(),Sticky(),)}>
         <div  className={"page "}>
-          <h1 id="3" className="page__head">benifits of gangajal</h1>
-          <p className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
+        <h1 id="3" className="page__head">benifits of gangajal</h1>
+
+          <Benefits/>
 
         </div>
         </Animator>
@@ -140,7 +142,9 @@ class Landing extends Component {
         <Animator animation={ZoomInScrollOut}>
         <div  className={"page page1"}>
           <h1 id="3" className="page__head">Ganga facts</h1>
-          <p className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
+          <p className="page__text">
+            Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.
+            </p>
 
         </div>
         </Animator>
