@@ -11,7 +11,7 @@
   position: fixed;
   z-index: 1000;
   top:5.3rem;
-  right: 10rem;
+  right: 15rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -25,7 +25,7 @@
     transition: all .3s;
     // background-color: var(--btn-color);
     padding: 1rem 2rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: "Roboto" , sans-serif;
     color: $color-grey-dark-3;
     // font-weight: 900;

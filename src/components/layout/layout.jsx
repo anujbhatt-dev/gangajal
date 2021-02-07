@@ -1,6 +1,7 @@
 import React, {Component} from "react"
 import {Route,Switch,withRouter} from "react-router-dom"
 import Landing from "./landing/landing"
+import Footer from "./footer/footer"
 import Contact from "./contact/contact"
 import About from "./about/about"
 import Loader from "./loader/loader"
@@ -10,6 +11,8 @@ import Nav from "./fixed/navigation"
 import logo from "../../assets/images/logo.svg";
 import $ from 'jquery'
 import ripples from 'jquery.ripples';
+import GoToTop from "./fixed/gototop"
+
 
 class Layout extends Component{
 
@@ -46,7 +49,10 @@ class Layout extends Component{
                <Route exact path="/about">
                    <About/>
                </Route>
+
             </Switch>
+            <GoToTop/>
+            <Footer/>
         </div>
       )
     }
