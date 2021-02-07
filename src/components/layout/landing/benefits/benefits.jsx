@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import lines from "../../../../assets/images/lines.png"
 import cssClass from "./benefits.css"
 
 export default class Benefits extends Component {
@@ -105,7 +106,7 @@ export default class Benefits extends Component {
     </g>
   </g>
 </svg>
-
+<img className="benefits__img" src={lines} alt=""/>
 <h2 onClick={()=>this.changeHandler(0)}>0</h2>
 <h2 onClick={()=>this.changeHandler(1)}>1</h2>
 <h2 onClick={()=>this.changeHandler(2)}>2</h2>

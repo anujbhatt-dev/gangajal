@@ -99,11 +99,7 @@ class Landing extends Component {
             </Tilt>
           </div>
 
-          <div className="page0__bottle2">
-            <Tilt>
-                <img src={bottle2} alt=""/>
-            </Tilt>
-          </div>
+
         </div>
         </Animator>
       </ScrollPage>
@@ -129,8 +125,8 @@ class Landing extends Component {
 
       <ScrollPage page={3}>
         <Animator animation={batch(Fade())}>
+        <h1 id="3" className="heading-primary">benifits of gangajal</h1>
         <div  className={"page "}>
-        <h1 id="3" className="page__head">benifits of gangajal</h1>
 
           <Benefits/>
 

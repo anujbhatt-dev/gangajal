@@ -40,7 +40,6 @@ class Layout extends Component{
             <Switch>
                <Route exact path="/">
                    <Landing/>
-                   <Social/>
                    <Wave/>
                </Route>
                <Route exact path="/contactUs">
