@@ -8,10 +8,11 @@
     height: 70vh;
   }
   &__text{
-    background: $gangajal-primary;
+    // background: $gangajal-primary;
     width:80rem;
     padding: 5rem;
-    border-bottom-left-radius: 100px;
+    margin-right: 10rem;
+    // border-bottom-left-radius: 100px;
     &_head{
       text-align: right;
        font-size: 3rem;
@@ -38,12 +39,16 @@
   &__svg{
     position: absolute;
     left:17%;
+    transition: all .5s;
+    border-radius: 50%;
+    border: 5px solid $color-grey-dark-3;
+    &:hover{
+      transform: scale(1.1);
+    }
     & img{
-      height: 7rem;
-      width: 7rem;
+      height: 5rem;
+      width: 5rem;
       padding: .5rem;
-      border-radius: 50%;
-      border: 5px solid $color-grey-dark-3;
     }
     &1{
        top: 22%;
@@ -66,4 +71,7 @@
        left:16.7%;
     }
   }
+}
+.selectedId2{
+  border: 5px solid #3527a9;
 }
