@@ -55,14 +55,14 @@ export default class Benefits extends Component {
     render() {
         return (
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" version="1.1" width="350" height="350">
+            <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" version="1.1" width="350" height="350">
   <defs>
     <clipPath id="clip">
       <circle cx="175" cy="175" r="157"/>
     </clipPath>
   </defs>
   <circle cx="175" cy="175" r="170" fill="#2314a1">
-     <animate attributetitle="r" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1"
+     <animate attributeName="r" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1"
               values="170;175;170" dur="5s" repeatCount="indefinite"/>
   </circle>
   <circle cx="175" cy="175" r="157" fill="#4294fe"/>
@@ -79,8 +79,8 @@ export default class Benefits extends Component {
         <rect y="230" x="-17" width="180" height="56" ry="28" rx="28"/>
         <rect y="301" x="56"  width="104" height="30" rx="15" ry="15"/>
       </g>
-      <use transform="translate(400 0)"  href="#land"/>
-      <animateTransform attributetitle="transform" attributeType="XML" type="translate"
+      <use transform="translate(400 0)" href="#land"/>
+      <animateTransform attributeName="transform" attributeType="XML" type="translate"
                         from="0 0" to="-400 0" dur="15s" repeatCount="indefinite"/>
     </g>
     <g>
@@ -100,7 +100,7 @@ export default class Benefits extends Component {
         <rect y="264" x="228" width="44"  height="22" rx="11" ry="11"/>
       </g>
       <use transform="translate(400 0)" href="#clouds"/>
-      <animateTransform attributetitle="transform" attributeType="XML" type="translate"
+      <animateTransform attributeName="transform" attributeType="XML" type="translate"
                         from="0 0" to="-400 0" dur="10s" repeatCount="indefinite"/>
     </g>
   </g>
