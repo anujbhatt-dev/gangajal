@@ -120,11 +120,11 @@ export default class Benefits extends Component {
   </g>
 </svg>
       <img className="benefits__img" src={lines} alt=""/>
-      <div className="benefits__svg benefits__svg1" onClick={()=>this.changeHandler(0)}><img  src={anahata} alt=""/></div>
-      <div className="benefits__svg benefits__svg2" onClick={()=>this.changeHandler(1)}><img  src={minerals} alt=""/></div>
-      <div className="benefits__svg benefits__svg3" onClick={()=>this.changeHandler(2)}><img  src={purify} alt=""/></div>
-      <div className="benefits__svg benefits__svg4" onClick={()=>this.changeHandler(3)}><img  src={facialTreatment} alt=""/></div>
-      <div className="benefits__svg benefits__svg5" onClick={()=>this.changeHandler(4)}><img  src={hands} alt=""/></div>
+      <div className={(this.state.selectedId===0)?"benefits__svg benefits__svg1 selectedId2":"benefits__svg benefits__svg1"} onClick={()=>this.changeHandler(0)}><img  src={anahata} alt=""/></div>
+      <div className={(this.state.selectedId===1)?"benefits__svg benefits__svg2 selectedId2":"benefits__svg benefits__svg2"} onClick={()=>this.changeHandler(1)}><img  src={minerals} alt=""/></div>
+      <div className={(this.state.selectedId===2)?"benefits__svg benefits__svg3 selectedId2":"benefits__svg benefits__svg3"} onClick={()=>this.changeHandler(2)}><img  src={purify} alt=""/></div>
+      <div className={(this.state.selectedId===3)?"benefits__svg benefits__svg4 selectedId2":"benefits__svg benefits__svg4"} onClick={()=>this.changeHandler(3)}><img  src={facialTreatment} alt=""/></div>
+      <div className={(this.state.selectedId===4)?"benefits__svg benefits__svg5 selectedId2":"benefits__svg benefits__svg5"} onClick={()=>this.changeHandler(4)}><img  src={hands} alt=""/></div>
 
       <div className="benefits__text">
          <div className="benefits__text_head">{this.state.benefits[this.state.selectedId].title} Lorem ipsum dolor.</div>

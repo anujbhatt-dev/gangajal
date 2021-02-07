@@ -65,6 +65,12 @@ class Landing extends Component {
     //   document.getElementById("logo").style.left = "15rem"
     // }, 4000)
 
+    // <div className="page0__bottle">
+    //   <Tilt>
+    //       <img src={bottle} alt=""/>
+    //   </Tilt>
+    // </div>
+
   }
 
    nowHandler=()=>{
@@ -93,11 +99,7 @@ class Landing extends Component {
           <h1 id="0" className="page__head">why Us</h1>
           <p className="page__text">Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.</p>
 
-          <div className="page0__bottle">
-            <Tilt>
-                <img src={bottle} alt=""/>
-            </Tilt>
-          </div>
+
 
 
         </div>
