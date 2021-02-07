@@ -13,56 +13,79 @@ export default class Benefits extends Component {
 
 
 
-    state={
+    state = {
 
-        benefits:[
+        benefits: [
 
             {
-                id:0,
-                icon:"",
-                title:"0",
-                description:"0",
+                id: 0,
+                icon: "",
+                title: "0",
+                description: "0",
             },
             {
-                id:1,
-                icon:"",
-                title:"1",
-                description:"1",
+                id: 1,
+                icon: "",
+                title: "1",
+                description: "1",
             },
             {
-                id:2,
-                icon:"",
-                title:"2",
-                description:"2",
+                id: 2,
+                icon: "",
+                title: "2",
+                description: "2",
             },
             {
-                id:3,
-                icon:"",
-                title:"3",
-                description:"3",
+                id: 3,
+                icon: "",
+                title: "3",
+                description: "3",
             },
             {
-                id:4,
-                icon:"",
-                title:"4",
-                description:"4",
+                id: 4,
+                icon: "",
+                title: "4",
+                description: "4",
             },
 
         ],
 
-        selectedId:0,
+        selectedId: 0,
 
     }
 
 
+    timeInterval = null;
 
-    changeHandler=(id)=>{
 
-  this.setState({selectedId:id})
+    componentDidMount = () => {
+        this.autoChange();
+    }
+
+
+
+    changeHandler = (id) => {
+
+        clearInterval(this.timeInterval);
+        this.setState({ selectedId: id })
 
 
     }
 
+    autoChange = () => {
+
+        this.timeInterval = setInterval(() => {
+            this.setState(s => {
+                if (s.selectedId === 4)
+                    return { selectedId: 0 };
+                else
+                    return { selectedId: s.selectedId + 1 };
+
+            })
+
+        }, 2000);
+
+    }
 
 
 
