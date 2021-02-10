@@ -10,12 +10,13 @@
     }
 }
 .waveOut{
-  // z-index: 1000000;
+  z-index: 1000000;
   height: 15rem;
   overflow: hidden;
   position: fixed;
   bottom: 0;
   width: 100vw;
+  
 }
 .waveWrapper {
     // right: 0;

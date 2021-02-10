@@ -97,7 +97,10 @@ body{
 }
 .hr{
   border: none;
-  border-bottom: 1px dotted rgba($color-grey,.8);
+  border-bottom: 8px dotted rgba($color-grey,.8);
   margin: 2rem auto 0 auto;
-  width: 10%;
+  width: 5rem;
+}
+.layout{
+  perspective: 1000px;
 }

@@ -33,7 +33,7 @@ class Layout extends Component{
   render(){
     return (
       // <Footer/>
-        <div className="landing">
+        <div className="layout">
             <Loader loaded={this.state.loaded}/>
             <img id="logo" className="landing__s1_img" src={logo} alt="" />
             <Nav/>

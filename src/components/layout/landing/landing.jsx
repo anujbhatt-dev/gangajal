@@ -120,6 +120,7 @@ class Landing extends Component {
           <h1 id="1" className="page__head">call us <span onClick={this.nowHandler} className="page__head_span">now</span> </h1>
 
         </div>
+         <hr className="hr"/>
         </Animator>
       </ScrollPage>
 
@@ -129,23 +130,14 @@ class Landing extends Component {
         <Animator animation={batch(Fade())}>
             <h1 id="3" className="heading-primary">benifits of gangajal</h1>
             <Benefits/>
+             <hr className="hr"/>
         </Animator>
       </ScrollPage>
+
+
+
 
       <ScrollPage page={4}>
-        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
-        <div  className={"page page1"}>
-          <h1 id="3" className="page__head">Ganga facts</h1>
-          <p className="page__text">
-            Lorem ipsum olor sit amet, consectetur adipisicing elit. In ducimus odit error quae, sapiente doloremque omnis ut. Temporibus sed nulla id porro! Dolor blanditiis, nostrum illo sint voluptates quis nisi.
-            </p>
-
-        </div>
-        </Animator>
-      </ScrollPage>
-
-
-      <ScrollPage page={5}>
         <Animator animation={ZoomInScrollOut}>
         <div  className={"page "}>
           <h1 id="3" className="page__head">Ganga facts</h1>
