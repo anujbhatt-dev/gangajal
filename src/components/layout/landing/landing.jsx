@@ -80,7 +80,7 @@ class Landing extends Component {
       document.querySelector(".page__head_span").style.overflow= "visibile";
       setTimeout(()=>{
         this.props.history.push("/contactUs");
-      },500)
+      },50)
    }
 
   render() {
@@ -107,7 +107,7 @@ class Landing extends Component {
       </ScrollPage>
 
       <ScrollPage page={1}>
-        <Animator animation={batch(Fade(), MoveOut(0, -200),)}>
+        <Animator animation={batch(Fade(), MoveOut(0, -200))}>
         <Whyus/>
          <hr className="hr"/>
         </Animator>
@@ -130,7 +130,7 @@ class Landing extends Component {
         <Animator animation={batch(Fade())}>
             <h1 id="3" className="heading-primary">benifits of gangajal</h1>
             <Benefits/>
-             <hr className="hr"/>
+            <hr className="hr"/>
         </Animator>
       </ScrollPage>
 

@@ -4,11 +4,21 @@
   animation: reach 1s linear;
   &__head{
     font-size: 10rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   &__mail{
     font-size: 2rem;
+    margin-bottom: 3rem;
     & a{
+      margin-left: 1rem;
+    }
+    &_mail{
+      color: black;
+    }
+    &_call{
+      color: black ;
+    }
+    &_whatsapp{
       color: $color-black;
     }
   }
